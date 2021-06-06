@@ -8,9 +8,9 @@ public class ConnectionFactory {
 		Connection conn = null;
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			String url = "jdbc:oracle:thin:@192.168.119.119:1521:dink";
-			String user = "scott";
-			String pw = "tiger";
+			String url = "jdbc:oracle:thin:@inputyourIP:inputyourSID";
+			String user = "userID";
+			String pw = "userPW";
 			conn = DriverManager.getConnection(url,user,pw);
 			
 		} catch (Exception e) {
